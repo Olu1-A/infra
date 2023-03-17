@@ -3,7 +3,7 @@
 resource "aws_security_group" "web_traffic" {
   name        = "allow_tls"
   description = "allows custom ports traffic"
-  dynmaic "ingress" {
+  dynamic "ingress" {
     iterator = port
     for_each = var.ingressrules
     content{
@@ -13,7 +13,7 @@ resource "aws_security_group" "web_traffic" {
     cidr_blocks = ["0.0.0.0/0"]
      }
  }
-  dynmaic "egress" {
+  dynamic "egress" {
     iterator = port
     for_each = var.egressrules
     content {
