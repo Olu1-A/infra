@@ -9,7 +9,7 @@ resource "aws_security_group" "vpc-ssh" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+#for ssh and tcp inbound
   egress {
     description = "Allow all ip and ports outbound"    
     from_port   = 0

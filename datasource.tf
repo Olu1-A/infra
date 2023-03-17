@@ -19,3 +19,5 @@ data "aws_ami" "aws_ec2" {
     values = ["x86_64"]
   }
 }
+
+#data source, created from terraform official docs

@@ -9,3 +9,4 @@ resource "aws_instance" "myec2vm" {
     "Name" = "EC2 Demo 2"
   }
 }
+#resouces with specification of object wanted
