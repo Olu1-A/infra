@@ -10,3 +10,5 @@ resource "aws_instance" "myec2vm" {
   }
 }
 #resouces with specification of object wanted
+# to call a resource using data source, pass the follow line below
+#"resource " = data."resource_type"resource_name".id
