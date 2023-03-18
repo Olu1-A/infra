@@ -1,3 +1,4 @@
+/*
 # Terraform Output Values
 
 # EC2 Instance Public IP
@@ -14,3 +15,4 @@ output "instance_publicdns" {
   value = aws_instance.myec2vm.public_dns
 }
 # value = resource_type.resource_name.output_desired
+*/

@@ -1,4 +1,4 @@
-
+/*
 # Create Security Group - SSH Traffic
 resource "aws_security_group" "web_traffic" {
   name        = "allow_tls"
@@ -27,3 +27,4 @@ resource "aws_security_group" "web_traffic" {
     Name = "vpc-ssh"
   }
 }
+*/
