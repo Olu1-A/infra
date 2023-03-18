@@ -19,6 +19,8 @@ variable "key_222" {
   type = string
   default = "demo222"
 }
+
+#below is how you state your dynamic variables for security group
 variable "ingressrules"{
       type = list(number)
       default = [80,443,8080,22]

@@ -16,3 +16,10 @@ output "instance_publicdns" {
 }
 # value = resource_type.resource_name.output_desired
 */
+
+#how to pass output(attributes) for lists variable
+output "for_output_list" {
+  description = "For Loop with List"
+  value = [for instance in aws_instance.myec2vm: instance.public_dns]
+}
+#i.e value= [for aws_resource_type.name_of_your_resource: what you want as output]
