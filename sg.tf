@@ -1,5 +1,5 @@
 # Create Security Group - SSH Traffic
-/*resource "aws_security_group" "vpc-ssh" {
+resource "aws_security_group" "vpc-ssh" {
   name        = "vpc-ssh"
   description = "Dev VPC SSH"
   ingress {
@@ -53,4 +53,4 @@ resource "aws_security_group" "vpc-web" {
     Name = "vpc-web"
   }
 }
-*/
+
